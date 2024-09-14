@@ -1,0 +1,24 @@
+
+
+
+.gallery {
+    display: grid;
+    gap: .5rem;
+    /*grid-template-columns: repeat(3, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    max-width: calc(900px + 2rem);
+    align-items: center;
+}
+.gallery .image-box {
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+.gallery .image-box:hover  {
+    transform: scale(1.1);
+}
+
+/*div > div {*/
+/*    padding: 10px;*/
+/*    background-color: #ccc;*/
+/*}*/
