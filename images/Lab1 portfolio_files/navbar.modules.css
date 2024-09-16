@@ -1,0 +1,23 @@
+
+
+.navbar {
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    align-items: stretch;
+}
+.navbar nav {
+    /*margin-left: 5rem;*/
+    /*justify-self: center;*/
+    /*flex: 1;;*/
+    /*align-self: center;*/
+    align-self: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+
+}

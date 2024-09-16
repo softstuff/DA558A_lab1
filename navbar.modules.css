@@ -1,0 +1,93 @@
+:root {
+    --text-color: white;
+    --background-color: #333;
+    --background-color-active: var(--accent-background-color);
+    --background-color-hover: #111;
+}
+
+.navbar {
+    display: block;
+    /*transform: translateY(-100%);*/
+    /*transition: all 0.5s ease-in;*/
+    /*transition: background-color 0.5s ease-in;*/
+    transition: background-color 2s ease-out;
+}
+
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    /*margin-right: 4rem;*/
+}
+.navbar .logo > h1 {
+    color: var( --text-color);
+    background-color: var(--background-color);
+    padding-inline: 2rem;
+    padding-bottom: 2px;
+    flex: 1;
+}
+.navbar nav {
+    flex: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /*gap: 2rem;*/
+    overflow: hidden;
+    background-color: var(--background-color);
+}
+.navbar li {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+.navbar li a {
+    display: block;
+    color: var( --text-color);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navbar li:hover:not(.active) {
+    background-color: var(--background-color-hover);
+    transition: background-color 200ms ease-in;
+}
+
+.navbar .active {
+    background-color: var(--background-color-active);
+    animation: fade-in-on-load 400ms ease-in-out ;
+}
+
+@keyframes fade-in-on-load {
+    0% {
+        background-color: var(--background-color);
+    }
+    100% {
+        background-color: var(--background-color-active);
+    }
+}
+
+
+
+
+@media screen and (min-width: 55rem) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        /*gap: 4rem;*/
+
+    }
+}
