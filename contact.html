@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-global.css">
     <link rel="stylesheet" href="navbar.modules.css">
+    <link rel="stylesheet" href="contact.modules.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Experiences</title>
+    <title>Contact</title>
+
 </head>
 <body class="container">
 <header class="navbar">
@@ -24,13 +26,41 @@
     </nav>
 </header>
 
-<main>
-    <h1>Experiences</h1>
+
+<main class="contact-form">
+<h1>Contact me</h1>
+
+<table>
+    <tr>
+        <th><label for="name">Namn:</label></th>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <th><label for="email">E-mail:</label></th>
+        <td><input type="text" id="email" required value=" "><br></td>
+    </tr>
+    <tr>
+        <th><label for="question">Fråga:</label></th>
+        <td><textarea id="question" name="question" size="50" required minlength="5"> </textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button type="submit" onclick="sendEmail()" class="btn-send">Skicka</button>
+        </td>
+    </tr>
+</table>
+
+<form name="contact-form" onsubmit="return sendEmail()" method="post" target="_blank" enctype="text/plain">
+</form>
 </main>
 <footer>
     <a href="contact.html">Kontakt</a>
     <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
     <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
 </footer>
+
+<script src="contact.js"></script>
 </body>
+
+
 </html>

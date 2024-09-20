@@ -1,0 +1,28 @@
+
+:root {
+    --form-value-width: 12rem;
+}
+
+textarea:invalid, input:invalid {
+    border-color: red;
+}
+
+textarea, input, button {
+    width: var(--form-value-width);
+    border-radius: 4px;
+}
+
+.btn-send {
+    float: right;
+    width: var(--form-value-width);
+}
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-form button {
+    background-color: var(--background-color-accent);
+}
