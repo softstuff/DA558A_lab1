@@ -1,0 +1,25 @@
+/* reset */
+:root {
+    --body-leading: 1.6;
+    --container-padding: 1.5em;
+    --container-width: 1260px;
+}
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    margin: 0;
+    font: 1em/var(--body-leading) sans-serif;
+}
+
+.container {
+    padding: var(--container-padding);
+    max-width: var(--container-width);
+    margin: 0 auto;
+}

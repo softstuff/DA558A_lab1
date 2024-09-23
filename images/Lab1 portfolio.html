@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)http://localhost:63342/DA558A_lab1/index.html?_ijt=17r6u7okl9efb6vp290rrh92ql&_ij_reload=RELOAD_ON_SAVE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" href="./Lab1 portfolio_files/styles-global.css">
+    <link rel="stylesheet" href="./Lab1 portfolio_files/navbar.modules.css">
+    <title>Lab1 portfolio</title>
+<style id="_goober"> @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}</style><link type="text/css" title="Grazie Fonts" rel="stylesheet" href="chrome-extension://fonaoompfjljjllgccccgjnhnoghohgc/fonts/fonts.css?jbUpdateLinksId=22"></head>
+<body>
+
+<header class="navbar">
+    <img src="./Lab1 portfolio_files/lab-portfolio-favicon-black.png">
+    <h1>Lab1 portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:63342/DA558A_lab1/skills.html">Skills</a></li>
+            <li><a href="http://localhost:63342/DA558A_lab1/experiences.html">Experiences</a></li>
+            <li><a href="http://localhost:63342/DA558A_lab1/projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+</main>
+<footer>
+    Footer
+</footer>
+
+<script>
+(function() {
+  var ws = new WebSocket('ws://' + window.location.host + 
+             '/jb-server-page?reloadMode=RELOAD_ON_SAVE&'+
+             'referrer=' + encodeURIComponent(window.location.pathname));
+  ws.onmessage = function (msg) {
+      if (msg.data === 'reload') {
+          window.location.reload();
+      }
+      if (msg.data.startsWith('update-css ')) {
+          var messageId = msg.data.substring(11);
+          var links = document.getElementsByTagName('link');
+          for (var i = 0; i < links.length; i++) {
+              var link = links[i];
+              if (link.rel !== 'stylesheet') continue;
+              var clonedLink = link.cloneNode(true);
+              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+              if (newHref !== link.href) {
+                clonedLink.href = newHref;
+              }
+              else {
+                var indexOfQuest = newHref.indexOf('?');
+                if (indexOfQuest >= 0) {
+                  // to support ?foo#hash 
+                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' + 
+                                    newHref.substring(indexOfQuest + 1);
+                }
+                else {
+                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+                }
+              }
+              link.replaceWith(clonedLink);
+          }
+      }
+  };
+})();
+</script></body><grazie-wrapper style="z-index: 2147483647; position: absolute; top: 0px; left: 0px; width: 0px; height: 0px; pointer-events: none; visibility: initial;"><grazie-shadow-root-wrapper style="all: initial;"><template shadowrootmode="open"><link type="text/css" title="Grazie Styles" rel="stylesheet" href="chrome-extension://fonaoompfjljjllgccccgjnhnoghohgc/content-script/content-script.css"><grazie-popups><grazie-selection-popup-holder></grazie-selection-popup-holder><grazie-selection-ai-button></grazie-selection-ai-button><grazie-selection-ai-menu></grazie-selection-ai-menu><grazie-chat></grazie-chat><grazie-auth-popup></grazie-auth-popup><grazie-report-dialog></grazie-report-dialog><grazie-tooltips></grazie-tooltips></grazie-popups></template></grazie-shadow-root-wrapper><script src="chrome-extension://fonaoompfjljjllgccccgjnhnoghohgc/injection/injection.js"></script></grazie-wrapper></html>
