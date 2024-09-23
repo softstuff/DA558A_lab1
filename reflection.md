@@ -10,3 +10,5 @@ I like the isolation effect of CSS Module and yes I only used the concept and no
 I used AI to generate all the test data, It is kind of new to me but I really like that work flow.
 
 I hope I did not blow the contact form by doing it with javascript form a empty form tag. Noted that the popup blocker needed to be change for it to work.
+
+If I should have to redo the assignment I think I would have started with adding the test data and content to all pages before styling it and adding the navbar and the footer. 
