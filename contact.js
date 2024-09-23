@@ -9,7 +9,7 @@ function sendEmail() {
         document.getElementById('email').value = replyTo
         ok = false
     }
-    if (question.length < 5) {
+    if (question === '') {
         document.getElementById('question').value = question
         ok = false
     }
