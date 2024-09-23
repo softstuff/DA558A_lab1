@@ -13,14 +13,14 @@
 <body class="container">
 <header class="navbar">
     <div class="logo">
-        <img src="images/lab-portfolio-favicon-black.png">
+        <img src="images/lab-portfolio-favicon-black.png" alt="logo">
         <h1>Lab1 portfolio</h1>
     </div>
     <nav>
         <ul>
             <li><a href="index.html">Portfolio</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li class="active"><a href="experiences.html">Experiences</a></li>
+            <li><a href="cv.html#skills">Skills</a></li>
+            <li><a href="cv.html#experiences">Experiences</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
     </nav>
@@ -53,10 +53,23 @@
 <form name="contact-form" onsubmit="return sendEmail()" method="post" target="_blank" enctype="text/plain">
 </form>
 </main>
+
 <footer>
-    <a href="contact.html">Kontakt</a>
-    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+    <nav>
+        <ul>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="cv.html#experiences">Experiences</a></li>
+            <li><a href="cv.html#skills">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div>
+        <ul>
+            <li><a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 Min Webbplats</p>
 </footer>
 
 <script src="contact.js"></script>
